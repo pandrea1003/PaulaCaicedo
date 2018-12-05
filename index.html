@@ -1,332 +1,284 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Paula Caicedo</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>PaulaCaicedo</title>
+  <link href="https://fonts.googleapis.com/css?family=Share" rel="stylesheet">
+  <link rel="stylesheet" href="css/minireset.min.css">
+  <link rel="stylesheet" href="assets/css/my.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/art.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
+        <header id="header">
+          <div class="main_nav">
+            <!-- <div class="container"> -->
+              <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+              <nav>
+                <ul>
+                  <li><a class="smoothscroll" href="#header">Home</a></li>
+                  <li><a class="smoothscroll" href="#about">About Me</a></li>
+                  <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+                  <li><a class="smoothscroll" href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            <!-- </div> -->
+          </div>
 
-    <div id="wrapper">
-        <div id="wrapper-color"></div>
-
-        <!--Navigation Menu-->
-        <div class="menu">
-            <div id="menu-button" class="menu-item">
-                <div id="menu-text">Menu
-                    <span id="menu-icon" class="fas fa-bars"></span>
-                </div>
-            </div>
-            <div class="menu-item menu-item-nav menu-toggle" data-value="home">Home</div>
-            <div class="menu-item menu-item-nav menu-toggle" data-value="portfolio">Portfolio</div>
-            <div class="menu-item menu-item-nav menu-toggle" data-value="bio">Bio</div>
-            <div class="menu-item menu-item-nav menu-toggle" data-value="contact">Contact</div>
-            <div class="menu-item menu-item-nav menu-toggle" data-value="social">Social</div>
-
+    <div id="wallpaper" class="wallpaper" data-image="./images/4.jpg"></div>
+    <div class="content">
+      <aside class="side">
+        <figure id="picture" class="picture">
+          <div class="picture-shadow"></div>
+          <img id="pictureImage" class="picture-image" src="images/PaulaC.jpg" alt="Image of Paula Caicedo"
+            width="320" height="320">
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">
+          Paula Caicedo
+        </h1>
+        <hr class="star-light">
+        <p class="job">
+          Full Stack Web Developer
+        </p>
+        <hr class="hr">
+        <div class="description">
+          <p>
+            Lets Create an Incredible Future!
+          </p>
         </div>
-        <!--End Navigation Menu-->
-
-        <!--Name Card Section an Slogan-->
-        <div id="name-card" class="welcome position-c">
-            <div id="name">Paula Caicedo </div>
-            <div id="slogan">Creating a better tomorrow</div>
-        </div>
-
-        <!--Main Navigation Display on Welcome Screen-->
-
-        <div id="main-showcase-display" class="welcome show-showcase position-a">
-            <div id="block-1" class="link-block" data-value="portfolio">
-                <div class="block-text">Portfolio</div>
-                <div class="decoration"></div>
-            </div>
-
-            <div id="block-2" class="link-block" data-value="bio">
-                <div class="block-text">Bio</div>
-                <div class="decoration"></div>
-            </div>
-
-            <div id="block-3" class="link-block" data-value="contact">
-                <div class="block-text">Contact</div>
-                <div class="decoration"></div>
-            </div>
-
-            <div id="block-4" class="link-block" data-value="social">
-                <div class="block-text">Social</div>
-                <div class="decoration"></div>
-            </div>
-
-
+        <div class="contact">
+          <a class="button" href="./images/Resume-_.docx" download="Paula_Caicedo_Resume" target="_blank">
+            Resume
+          </a>
         </div>
 
-
-        <!--Portfolio Section-->
-        <div id="project-wrapper">
-
-            <div id="full-stack-projects" class="project-category">
-                <h2 class="category-header">Full Stack Projects</h2>
-                <div id="project-0" class='portfolio-background color-3'>
-                    <img class='project-image' src='assets/images/ROH-Properties.png' onclick="location.href='https://whispering-plains-33899.herokuapp.com/'">
-                    <div class='project-title'>ROH Properties Forward</div>
-                    <p class="description">A fullstack application to attract investors and brokers to a real estate investment company with an admin page for site managemnt.</p>
-                    <ul class="tech-list">
-                        <li>React</li>
-                        <li>Javascript</li>
-                        <li>Node / Express</li>
-                        <li>MongoDB / Mongoose</li>
-                        <li>HTML / CSS</li>
-                        <li>Auth0</li>
-                        <li>Nodemailer</li>
-                    </ul>
-                </div>
-                <div id="project-1" class='portfolio-background color-4'>
-                    <img class='project-image' src='assets/images/gymbuddy.png' onclick="location.href='https://guarded-hollows-27894.herokuapp.com/'">
-                    <div class='project-title'>CoffeeMe</div>
-                    <p class="description">A fullstack application allows coffee lover find the nearest coffeshop to them.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>Node / Express</li>
-                        <li>MySQL / Sequelize</li>
-                        <li>HTML / CSS</li>
-                        <li>Handlebars</li>
-                        <li>Passport</li>
-                    </ul>
-                </div>
-                <div id="project-2" class='portfolio-background color-1'>
-                    <img class='project-image' src='assets/images/NYT-summary.png' onclick="location.href='https://murmuring-savannah-78759.herokuapp.com/'">
-                    <div class='project-title'></div>
-                    <p class="description">A fullstack application using React to summarize news stories through an API call to the New York Times</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>Node / Express</li>
-                        <li>React</li>
-                        <li>MongoDB / Mongoose</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-3" class='portfolio-background color-2'>
-                    <img class='project-image' src='assets/images/news_scraper.png' onclick="location.href='https://powerful-meadow-82222.herokuapp.com/'">
-                    <div class='project-title'>News-Scraper</div>
-                    <p class="description">A fullstack application to summarize and comment on news from NPR using cheerio for scraping.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>Node / Express</li>
-                        <li>MongoDB / Mongoose</li>
-                        <li>HTML / CSS</li>
-                        <li>Handlebars</li>
-                        <li>Cheerio</li>
-                    </ul>
-                </div>
-                <div id="project-4" class='portfolio-background color-3'>
-                    <img class='project-image' src='assets/images/friend-finder.png' onclick="location.href='https://whispering-wildwood-27719.herokuapp.com/'">
-                    <div class='project-title'>Friend Finder</div>
-                    <p class="description">An almost fullstack (no database connection) application that matches users with a friend with similar interests.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>Node / Express</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-5" class='portfolio-background color-4'>
-                    <img class='project-image' src='assets/images/burger.png' onclick="location.href='https://arcane-chamber-53303.herokuapp.com/'">
-                    <div class='project-title'>Burger Dive</div>
-                    <p class="description">A fullstack application that allows users to create and devour burgers.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>Node / Express</li>
-                        <li>HTML / CSS</li>
-                        <li>MySQL</li>
-                        <li>Handlebars</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="front-end-projects" class="project-category">
-                <h2 class="category-header">Front End Projects</h2>
-                <div id="project-6" class='portfolio-background color-3'>
-                    <img class='project-image' src='assets/images/simpsons.png' onclick="location.href='https://joeyvon2434.github.io/memory-game-v2/'">
-                    <div class='project-title'>The Simpsons Memory Game</div>
-                    <p class="description">A front end React based game that let's users guess characters to achieve a high score.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>React</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-7" class='portfolio-background color-1'>
-                    <img class='project-image' src='assets/images/Space-Trivia.png' onclick="location.href='https://joeyvon2434.github.io/TriviaGame/'">
-                    <div class='project-title'>Space Trivia</div>
-                    <p class="description">A front end trivia game about space!</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-8" class='portfolio-background color-2'>
-                    <img class='project-image' src='assets/images/Starfighter-Challenge.png' onclick="location.href='https://joeyvon2434.github.io/unit-4-game/'">
-                    <div class='project-title'>Star Wars Starfighter Challenge</div>
-                    <p class="description">A front end game where users can battle with star fighters from Star Wars. Don't get too excited... it's not animated.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-9" class='portfolio-background color-4'>
-                    <img class='project-image' src='assets/images/rick-and-morty-hangman.png' onclick="location.href='https://joeyvon2434.github.io/word-guess-game/'">
-                    <div class='project-title'>Rick and Morty Hangman</div>
-                    <p class="description">A front end hangman style game with a Rick and Morty theme.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-10" class='portfolio-background color-3'>
-                    <img class='project-image' src='assets/images/Gif-API-Practice.png' onclick="location.href='https://joeyvon2434.github.io/giph-API-page/'">
-                    <div class='project-title'>API Practice</div>
-                    <p class="description">A front end application that displays giphy gifs. Developed to practice using APIs.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-11" class='portfolio-background color-1'>
-                    <img class='project-image' src='assets/images/train-schedule.png' onclick="location.href='https://joeyvon2434.github.io/train-time/'">
-                    <div class='project-title'>Firebase Practice</div>
-                    <p class="description">A front end application that allows user to update a train schedule through Google's Firebase.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>HTML / CSS</li>
-                        <li>Firebase</li>
-                    </ul>
-                </div>
-                <div id="project-12" class='portfolio-background color-2'>
-                    <img class='project-image' src='assets/images/group-project-png.png' onclick="location.href='https://gkevin315.github.io/Group-Project/'">
-                    <div class='project-title'>First project</div>
-                    <p class="description">A front end application built during a group project that lets users search for events, and display the anticipated weather as well.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>HTML / CSS</li>
-                        <li>GoogleMaps API</li>
-
-                    </ul>
-                </div>
-            </div>
-
-            <div id="command-line-projects" class="project-category">
-                <h2 class="category-header">Command Line Projects</h2>
-                <div id="project-13" class='portfolio-background color-1'>
-                    <img class='project-image' src='assets/images/github.png' onclick="location.href='https://github.com/joeyvon2434/liri-node-app'">
-                    <div class='project-title'>Liri Node App</div>
-                    <p class="description">A command line application that let's users search certain entertainment based APIs.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>Node</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-                <div id="project-14" class='portfolio-background color-3'>
-                    <img class='project-image' src='assets/images/bamazon.png' onclick="location.href='https://github.com/joeyvon2434/bamazon-CLI-app'">
-                    <div class='project-title'>Bamazon Command Line App</div>
-                    <p class="description">A command line application that acts as a store and inventory control application.</p>
-                    <ul class="tech-list">
-                        <li>Javascript</li>
-                        <li>Node</li>
-                        <li>HTML / CSS</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="github-repo-section" class="project-category">
-                <h2 class="category-header">Git Hub Repositories</h2>
-                <div id="github-repo" class='portfolio-background color-4'>
-                    <img class='project-image' src='assets/images/github.png' onclick="location.href='https://github.com/joeyvon2434?tab=repositories'">
-                    <div class='project-title'>Git Hub Repositories</div>
-                </div>
-            </div>
-        </div>
-
-        <!--Bio Section-->
-
-        <div id="bio" class="position-e">
-            <section id="bio-text">
-                <img id="bio-image-1" class="bio-image" src="assets/images/Profile.JPG">
-                <p>
-                    Traveller, runner, chemical engineer, skier, energy industry professional, and web developer. I
-                    attended the University of
-                    Florida where I earned a B.S. in Chemical Engineering. Following school, I started a career as a
-                    process
-                    engineer in manufacturing which took me to Baton Rouge, Louisiana for 5 years before transferring
-                    to
-                    Billings, Montana. While working for one of the largest companies in the world, I was able to gain
-                    experience
-                    in project management and development, strategic planning, project economics, business operations,
-                    manufacturing,
-                    and process monitoring and optimization. Eventually, I began to feel as if I wanted to be in a more
-                    creative
-                    field. I knew it was time to make a career change... I started saving.
-                </p>
-                <img id="bio-image-2" class="bio-image" src="assets/images/skiing.jpg">
-                <p>
-                    I left my job and decided to fulfill a few of my dreams first; Ski, travel, live overseas, and
-                    learn a new language. After
-                    skiing for the winter of 2017 in Montanta, I travelled Europe for 2 months before moving to Berlin
-                    to
-                    learn German. Ich spreche ein bisschen Deutsch. While in Germany I began to explore my interest in
-                    web
-                    development, and decided it was the perfect balance between creativity and my technical skills. I
-                    knew
-                    I had found my next career. Currently, I am living in Orlando, FL and attendig the UCF Coding
-                    Bootcamp.
-                    I look forward to starting a new career in a well balnced -technical and creative- field.
-
-                </p>
-
-            </section>
-        </div>
-
-        <!--Social Section-->
-
-        <div id="social-bar" class="position-g">
-            <span class="fab fa-instagram social-link" onclick="location.href='https://www.instagram.com/joeyvonedwins/?hl=en'"></span>
-            <span class="fab fa-linkedin social-link" onclick="location.href='https://www.linkedin.com/in/joseph-von-edwins-492054110'"></span>
-            <span class="fab fa-github-square social-link" onclick="location.href='https://github.com/joeyvon2434'"></span>
-        </div>
-
-
-
-
-        <!--Contact Section-->
-        <!--Add automated emails in the future-->
-        <div class="contact-box">
-            <p>Feel free to contact me at the email address below.</p>
-            <p>joseph.von.edwins@gmail.com</p>
-        </div>
-
-        <div id='decorative-box'></div>
-
-        <div id='decorative-box-2'></div>
-
-        <div id='decorative-box-3'></div>
-
-
-
-        <!--Close wrapper div-->
+        <ul class="social">
+          <a href="https://github.com/pandrea1003" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/paulacaicedocodes/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        
+        </ul>
+      </main>
     </div>
+    <a class="smoothscroll" href="#about">
+      <div class="scroll-down"></div>
+    </a>
+
+  </header>
+
+  <!-- About Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <h1>About Me</h1>
+        <hr class="hr">
+        <div class="block"></div>
+      </div>
+      <div class="row">
+        <!-- <div class="six columns"> -->
+        <img class="photo" src="images/Stairs.jpg" 
+          alt="aboutMePhoto">
+
+        <p class="aboutPC"> Hi, my name is Victoria, I am a certified Full Stack Developer with a background in Hotel
+          Management and Business Administration. I currently live in the Orlando Area and have experience in web
+          development, with aproven ability to work independently or as part of a team.
+          I was born and raised in Mexico, but have lived and worked in the US for the
+          last ten years, which allowed me to gain strong verbal and written communication skills in both English and
+          Spanish. Based on my past experiences, I have successfully thrived in a world of constant change and have a
+          passion for learning new skills and technologies.
+          <br><br>
+          In my free time I enjoy playing tennis, knitting and traveling.  
+          <br><br>
+          This is my personal website that displays my recent projects. Hope you enjoy going through my work.
+          If you are interested to learn more about me, check out my social media links or contact me by
+          filling up the form on contact section and I will get back at you!
+          <br><br><br>
+          <!-- Techical Skills: Node.Js, Express, JavaScript, MongoDB, Heroku, jQuery, PHP, React Js, GIT,
+          Github, MySQL, Firebase, HTML5, CSS3, Bootstrap, Materialize, Media Queries,
+          APIs, JSON, REST, AJAX, the command line. -->
+        </p>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <section id="portfolio">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <hr class="hr">
+      <div class="block"></div>
+
+      <div class="content">
+        <div class="grid">
+          <figure class="effect-jazz">
+            <img src="./images/CoffeeME.png" alt="CoffeeME" />
+            <figcaption>
+              <h2><span>CoffeeMe</span></h2>
+              <p>Coffee Shop Finding App<br><br>
+                Application built with React, Node, Express, & MongoDB. <br><br>
+                <span class="links" onclick="portfolioLinks('http://resfeber.herokuapp.com/')"><i
+                    class="fas fa-desktop"></i>
+                  Visit Site</span>
+                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/resfeber')"><i
+                    class="fab fa-github"></i>
+                  GitHub Repo</span>
+                <br><br>
+              </p>
+              <a class="effect" href="#!"></a>
+            </figcaption>
+          </figure>
+          <figure class="effect-jazz">
+            <img src="./images/portfolioImages/cityclippers.jpg" alt="cityClippers" />
+            <figcaption>
+              <h2>City<span>Clippers</span></h2>
+              <p>App to find the best dining deals<br><br>
+                Application built with HTML, CSS, JavaScript.<br><br>
+                <span class="links" onclick="portfolioLinks('https://victoriagoesplaces.github.io/CityClippers/?zip=34734&action=#!')"><i
+                    class="fas fa-desktop"></i>
+                  Visit Site</span>
+                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/CityClippers')"><i
+                    class="fab fa-github"></i>
+                  GitHub Repo</span>
+                <br><br>
+              </p>
+              <a class="effect" href="#!"></a>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="grid">
+          <figure class="effect-jazz">
+            <img src="./images/portfolioImages/workout.jpg" alt="gymBuddy" />
+            <figcaption>
+              <h2>Gym <span>Buddy</span></h2>
+              <p>Find your best gym partner app <br><br>
+                Application built with HTML, CSS, JavaScript, Node, express, Sequelize, & MySQL. <br><br>
+                <span class="links" onclick="portfolioLinks('https://pacific-headland-82730.herokuapp.com/')"><i class="fas fa-desktop"></i>
+                  Visit Site</span>
+                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/projectTwo')"><i
+                    class="fab fa-github"></i>
+                  GitHub Repo</span>
+                <br><br>
+              </p>
+              <a class="effect" href="#!"></a>
+            </figcaption>
+          </figure>
+          <figure class="effect-jazz">
+            <img src="./images/portfolioImages/train.jpg" alt="trainScheduler" />
+            <figcaption>
+              <h2>Train <span>Scheduler</span></h2>
+              <p>Schedule Web App <br><br>
+                Application built with HTML, CSS, JavaScript, Firebase. <br><br>
+                <span class="links" onclick="portfolioLinks('https://victoriagoesplaces.github.io/TrainScheduler/')"><i
+                    class="fas fa-desktop"></i>
+                  Visit Site</span>
+                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/TrainScheduler')"><i
+                    class="fab fa-github"></i>
+                  GitHub Repo</span>
+                <br><br>
+              </p>
+              <a class="effect" href="#!"></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <section id="contact">
+    <div class="container">
+      <h1>Contact</h1>
+      <hr class="hr">
+      <div class="block"></div>
+      <div class="socialTwo">
+        <a href="https://github.com/pandrea1003" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/paulacaicedocodes/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzZPer2zuU2jwp5KR8_clwdEh6kMdLwQzw2A4F1Ibslf_VQroKy/exec">
+        <div class="formElements">
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleRecipientInput">Name</label>
+              <input name="name" class="u-full-width" type="text">
+            </div>
+            <div class="six columns">
+              <label for="exampleEmailInput">Email</label>
+              <input name="email" class="u-full-width" type="email">
+            </div>
+          </div>
+          <div class="row">
+            <label for="exampleMessage">Message</label>
+            <textarea name="message" class="u-full-width"></textarea>
+            <button class="button" type="submit" value="Submit">Submit</button>
+          </div>
+        </div>
+        <div class="submitMessage formSub" style="display:none">
+          <h4>Thanks for reaching out! I'll be in touch with you soon!</h4>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Footer Section–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer>
+    <div class="container">
+      <div class="nav">
+        <p class="footer">&copy; Copyright 2018 Paula A. Caicedo</p>
+      </div>
+    </div>
+  </footer>
 
 
+  <noscript>
+    <style type="text/css">
+      .wallpaper {
+        animation-name: zoomOut;
+      }
+      .picture {
+        animation-name: dropIn;
+      }
+    </style>
+  </noscript>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
 
-    <script src="assets/javascript//app.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+  <script defer type="text/javascript" src="assets/javascript/app.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
 </body>
 
 </html>
+
