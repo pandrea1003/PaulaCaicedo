@@ -1,4 +1,5 @@
 html {
+  background: purple;
     background-image: none;
     font-family: 'Share', cursive;
     color: #fff;
@@ -6,26 +7,33 @@ html {
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
     min-height: 100vh;
-    min-width: 300px;
+    min-width: 100px;
     overflow-x: hidden;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .row{
+    background: green;
   }
   
   a {
     color: currentColor;
     cursor: pointer;
     text-decoration: none;
+
   }
 
   nav{
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     font-weight: 700;
     font-family: 'Montserrat';
     font-size: 80%;
     padding: 0.8rem;
+    background: red;
   }
   
+
   /* 2. Shared */
   
   .wallpaper,
@@ -57,23 +65,29 @@ html {
     background-size: cover;
     opacity: 0.2;
     position: fixed;
+
   }
   
   .content {
     display: flex;
     position: relative;
-    min-height: 100vh;
+    min-height: 60vh;
+    padding-top: 20px;
+    background: red;
+
   }
-  
+/*   
   .side {
     max-height: 20rem;
     max-width: 20rem;
-  }
+  } */
   
   .picture {
     padding-top: 100%;
+    /* relative places the picture in the box */
     position: relative;
     width: 100%;
+    background: rgb(238, 234, 241);
   }
   
   .picture-shadow {
@@ -89,14 +103,25 @@ html {
   }
   
   .about {
-    max-width: 26rem;
-
+    max-width: 20rem;
+    background: orange;
 
   }
+
+
   
-  header, #portfolio{
-    background-color: #18BC9C;
+  header{
+    background-color: #18BC9C !important;
+    padding: 6rem 0 !important;
+    padding-top: 0%;
   }
+
+#portfolio{
+  background-color: #18BC9C !important;
+  padding: 6rem 0 !important;
+
+
+}
 
   hr.star-light,
 hr.star-dark {
@@ -124,7 +149,7 @@ hr.star-dark {
     font-size: 0.85rem;
   }
   
-  .hr {
+  /* .hr {
     border: none;
     content: "";
     height: 1px;
@@ -132,12 +157,13 @@ hr.star-dark {
     margin-top: 1.5rem;
     transform-origin: center left;
     width: 4rem;
-  }
+  } */
   
   .description {
     font-size: 1.5rem;
   }
   
+  /* button for resume */
   .contact {
     display: inline-block;
     margin-bottom: 0;
@@ -250,12 +276,14 @@ hr.star-dark {
       justify-content: space-evenly;
       /* padding: 4rem; */
     }
+
+   
   
     .side {
       flex-grow: 0;
       flex-shrink: 0;
       height: 20rem;
-      margin-left: 4rem;
+      margin-right: 4rem;
       order: 2;
       width: 20rem;
     }
@@ -271,13 +299,20 @@ hr.star-dark {
   
   /* Portfolio Section (images)  */
   .grid {
-      position: relative;
-      clear: both;
+       position: relative;
+       clear: both;
       margin: 0 auto;
-      padding: 1em 0 4em;
-      max-width: 1000px;
+  padding: 3rem 1rem;
       list-style: none;
-      text-align: center;
+      text-align: center; 
+      float: left;
+      width: 25%;
+  }
+
+  #Port{
+    max-width: 1000px;
+    margin: auto;
+    background: #fff !important;
   }
   
   /* Common style */
@@ -454,7 +489,9 @@ hr.star-dark {
     }
   
     ul{
-      padding-left: 36%;
+      padding-left: 40%;
+      background: #0f1213;
+
     }
   
   @media screen and (min-width: 800px) {
@@ -526,9 +563,10 @@ hr.star-dark {
       font-size: 1.9rem;
     }
   
-  #about {
-    padding-top: 20%;
-    padding-bottom: 20%;
+  #about, #portfolio {
+   background: pink;
+    padding: 100px 0 100px 0;
+    max-width: auto;
     }
   }
   

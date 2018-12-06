@@ -15,270 +15,258 @@
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
-        <header id="header">
-          <div class="main_nav">
-            <!-- <div class="container"> -->
-              <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
-              <nav>
-                <ul>
-                  <li><a class="smoothscroll" href="#header">Home</a></li>
-                  <li><a class="smoothscroll" href="#about">About Me</a></li>
-                  <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
-                  <li><a class="smoothscroll" href="#contact">Contact</a></li>
-                </ul>
-              </nav>
-            <!-- </div> -->
-          </div>
+  <div id="header">
+    <div class="main_nav">
+      <!-- <div class="container"> -->
+      <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+      <nav>
+        <ul>
+          <li><a class="smoothscroll" href="#header">Home</a></li>
+          <li><a class="smoothscroll" href="#about">About Me</a></li>
+          <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+          <li><a class="smoothscroll" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- </div> -->
+    </div>
+    <header>
+      <div id="wallpaper" class="wallpaper"></div>
+      <div class="content">
+        <aside class="side">
+          <figure id="picture" class="picture">
+            <div class="picture-shadow"></div>
+            <img id="pictureImage" class="picture-image" class="img-fluid mb-5 d-block mx-auto" class="img-fluid mb-5 d-block mx-auto"
+              src="images/PaulaC.jpg" alt="Image of Paula Caicedo" width="200" height="320">
+        </aside>
 
-    <div id="wallpaper" class="wallpaper" data-image="./images/4.jpg"></div>
-    <div class="content">
-      <aside class="side">
-        <figure id="picture" class="picture">
-          <div class="picture-shadow"></div>
-          <img id="pictureImage" class="picture-image" src="images/PaulaC.jpg" alt="Image of Paula Caicedo"
-            width="320" height="320">
-        </figure>
-      </aside>
-      <main class="about">
-        <h1 class="name">
-          Paula Caicedo
-        </h1>
-        <hr class="star-light">
-        <p class="job">
-          Full Stack Web Developer
-        </p>
-        <hr class="hr">
-        <div class="description">
-          <p>
-            Lets Create an Incredible Future!
+        <main class="about">
+          <h1 class="name">
+            Paula Caicedo
+          </h1>
+          <hr class="star-light">
+          <p class="job">
+            Full Stack Web Developer
           </p>
-        </div>
-        <div class="contact">
-          <a class="button" href="./images/Resume-_.docx" download="Paula_Caicedo_Resume" target="_blank">
-            Resume
-          </a>
+          <hr class="hr">
+          <div class="description">
+            <p>
+              Lets Create an Incredible Future!
+            </p>
+          </div>
+          <div class="contact">
+            <a class="button" href="./images/Resume-_.docx" download="Paula_Caicedo_Resume" target="_blank">
+              Resume
+            </a>
+          </div>
+          </aside>
+
+          </figure>
+
+          <ul class="social">
+            <a href="https://github.com/pandrea1003" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/paulacaicedocodes/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+          </ul>
+
+      </div>
+      <a class="smoothscroll" href="#about">
+        <div class="scroll-down"></div>
+      </a>
+      </main>
+    </header>
+
+    <!-- About Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="about">
+      <div class="container">
+        <h1 class="text-center text-uppercase text-white">About Me</h1>
+        <hr class="hr">
+        <div class="block"></div>
+        <div class="content">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+              complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
+              customization.</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract
+              clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          </div>
         </div>
 
-        <ul class="social">
+      </div>
+    </section>
+
+    <!-- Portfolio Section
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <section id="portfolio">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <hr class="hr">
+        <div class="block"></div>
+        <div class="content" id="Port" >
+
+          <!-- CoffeeME -->
+          <div class="grid">
+            <figure class="effect-jazz" >
+              <img src="./images/CoffeeME.png" alt="CoffeeME" />
+            </div>
+            
+              <h2>CoffeeMe</h2>
+              <p>Coffee Shop Finding App<br><br>
+                Application built with GoogleMaps API, HTML, CSS, JavaScript <br><br>
+                <a class="links" onclick="portfolioLinks('https://ahmedharazi.github.io/COFFEE-ME/')"><i class="fas fa-desktop"></i>
+                  Visit Site</a>
+                <a class="links" onclick="portfolioLinks('https://github.com/ahmedharazi/COFFEE-ME')"><i class="fab fa-github"></i>
+                  GitHub Repo</a>
+                <br><br>
+              </p>
+         
+
+          </figure>
+          <!-- Back2 -->
+
+          <div class="grid">
+            <figure class="effect-jazz" >
+              <img src="images/Back2.png" alt="Back2" />
+              <h2>Back2<span></span></h2>
+              <p>Back to school application, students may write and review professors as well as purchase new books<br><br>
+                Application built with HTML, CSS, JavaScript, Facebook API React, Node, Express, & mySQL<br><br>
+
+                <span class="links" onclick="portfolioLinks('https://back2.herokuapp.com/index')"><i class="fas fa-desktop"></i>
+                  Visit Site</span>
+                <span class="links" onclick="portfolioLinks('https://github.com/TheTTimeLives/Project-Two')"><i class="fab fa-github"></i>
+                  GitHub Repo</span>
+                <br><br>
+              </p>
+              <!-- <a class="effect" href="#!"></a> -->
+          </div>
+          </figure>
+
+          <!-- BeautyGeek -->
+
+          <div class="grid">
+            <figure class="effect-jazz" >
+              <img src="images/BeautyGeek.png" alt="BeautyGeek" />
+
+              <h2>BeautyGeek <span></span></h2>
+              <p>Makeup review and shop site <br><br>
+                Application built with HTML, CSS, JavaScript, React, Node, Express, & MongoDB. <br><br>
+                <span class="links" onclick="portfolioLinks('https://fierce-thicket-52912.herokuapp.com/')"><i class="fas fa-desktop"></i>
+                  Visit Site</span>
+                <span class="links" onclick="portfolioLinks('https://github.com/pandrea1003/BeautyGeek')"><i class="fab fa-github"></i>
+                  GitHub Repo</span>
+                <br><br>
+              </p>
+              <!-- <a class="effect" href="#!"></a> -->
+          </div>
+          </figure>
+          <!-- add another one -->
+          <div class="grid">
+            <figure class="effect-jazz" >
+              <img src="images/GIF.png" alt="GIFS" />
+              <h2>GIFTastic</h2>
+              <p>Find your favorite GIFS <br><br>
+                Application built with HTML, CSS, JavaScript, GIF API. <br><br>
+                <span class="links" onclick="portfolioLinks('https://pandrea1003.github.io/GIFtastic/')"><i class="fas fa-desktop"></i>
+                  Visit Site</span>
+                <span class="links" onclick="portfolioLinks('https://github.com/pandrea1003/GIFtastic')"><i class="fab fa-github"></i>
+                  GitHub Repo</span>
+                <br><br>
+              </p>
+
+              <!-- <a class="effect" href="#!"></a> -->
+            </div>
+            </figure>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+        <hr class="hr">
+        <div class="block"></div>
+        <div class="socialTwo">
           <a href="https://github.com/pandrea1003" target="_blank">
             <i class="fab fa-github"></i>
           </a>
           <a href="https://www.linkedin.com/in/paulacaicedocodes/" target="_blank">
             <i class="fab fa-linkedin"></i>
           </a>
-        
-        </ul>
-      </main>
-    </div>
-    <a class="smoothscroll" href="#about">
-      <div class="scroll-down"></div>
-    </a>
-
-  </header>
-
-  <!-- About Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <h1>About Me</h1>
-        <hr class="hr">
-        <div class="block"></div>
-      </div>
-      <div class="row">
-        <!-- <div class="six columns"> -->
-        <img class="photo" src="images/Stairs.jpg" 
-          alt="aboutMePhoto">
-
-        <p class="aboutPC"> Hi, my name is Victoria, I am a certified Full Stack Developer with a background in Hotel
-          Management and Business Administration. I currently live in the Orlando Area and have experience in web
-          development, with aproven ability to work independently or as part of a team.
-          I was born and raised in Mexico, but have lived and worked in the US for the
-          last ten years, which allowed me to gain strong verbal and written communication skills in both English and
-          Spanish. Based on my past experiences, I have successfully thrived in a world of constant change and have a
-          passion for learning new skills and technologies.
-          <br><br>
-          In my free time I enjoy playing tennis, knitting and traveling.  
-          <br><br>
-          This is my personal website that displays my recent projects. Hope you enjoy going through my work.
-          If you are interested to learn more about me, check out my social media links or contact me by
-          filling up the form on contact section and I will get back at you!
-          <br><br><br>
-          <!-- Techical Skills: Node.Js, Express, JavaScript, MongoDB, Heroku, jQuery, PHP, React Js, GIT,
-          Github, MySQL, Firebase, HTML5, CSS3, Bootstrap, Materialize, Media Queries,
-          APIs, JSON, REST, AJAX, the command line. -->
-        </p>
-      </div>
-    </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Portfolio Section
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <section id="portfolio">
-    <div class="container">
-      <h1>Portfolio</h1>
-      <hr class="hr">
-      <div class="block"></div>
-
-      <div class="content">
-        <div class="grid">
-          <figure class="effect-jazz">
-            <img src="./images/CoffeeME.png" alt="CoffeeME" />
-            <figcaption>
-              <h2><span>CoffeeMe</span></h2>
-              <p>Coffee Shop Finding App<br><br>
-                Application built with React, Node, Express, & MongoDB. <br><br>
-                <span class="links" onclick="portfolioLinks('http://resfeber.herokuapp.com/')"><i
-                    class="fas fa-desktop"></i>
-                  Visit Site</span>
-                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/resfeber')"><i
-                    class="fab fa-github"></i>
-                  GitHub Repo</span>
-                <br><br>
-              </p>
-              <a class="effect" href="#!"></a>
-            </figcaption>
-          </figure>
-          <figure class="effect-jazz">
-            <img src="./images/portfolioImages/cityclippers.jpg" alt="cityClippers" />
-            <figcaption>
-              <h2>City<span>Clippers</span></h2>
-              <p>App to find the best dining deals<br><br>
-                Application built with HTML, CSS, JavaScript.<br><br>
-                <span class="links" onclick="portfolioLinks('https://victoriagoesplaces.github.io/CityClippers/?zip=34734&action=#!')"><i
-                    class="fas fa-desktop"></i>
-                  Visit Site</span>
-                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/CityClippers')"><i
-                    class="fab fa-github"></i>
-                  GitHub Repo</span>
-                <br><br>
-              </p>
-              <a class="effect" href="#!"></a>
-            </figcaption>
-          </figure>
         </div>
 
-        <div class="grid">
-          <figure class="effect-jazz">
-            <img src="./images/portfolioImages/workout.jpg" alt="gymBuddy" />
-            <figcaption>
-              <h2>Gym <span>Buddy</span></h2>
-              <p>Find your best gym partner app <br><br>
-                Application built with HTML, CSS, JavaScript, Node, express, Sequelize, & MySQL. <br><br>
-                <span class="links" onclick="portfolioLinks('https://pacific-headland-82730.herokuapp.com/')"><i class="fas fa-desktop"></i>
-                  Visit Site</span>
-                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/projectTwo')"><i
-                    class="fab fa-github"></i>
-                  GitHub Repo</span>
-                <br><br>
-              </p>
-              <a class="effect" href="#!"></a>
-            </figcaption>
-          </figure>
-          <figure class="effect-jazz">
-            <img src="./images/portfolioImages/train.jpg" alt="trainScheduler" />
-            <figcaption>
-              <h2>Train <span>Scheduler</span></h2>
-              <p>Schedule Web App <br><br>
-                Application built with HTML, CSS, JavaScript, Firebase. <br><br>
-                <span class="links" onclick="portfolioLinks('https://victoriagoesplaces.github.io/TrainScheduler/')"><i
-                    class="fas fa-desktop"></i>
-                  Visit Site</span>
-                <span class="links" onclick="portfolioLinks('https://github.com/victoriagoesplaces/TrainScheduler')"><i
-                    class="fab fa-github"></i>
-                  GitHub Repo</span>
-                <br><br>
-              </p>
-              <a class="effect" href="#!"></a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <section id="contact">
-    <div class="container">
-      <h1>Contact</h1>
-      <hr class="hr">
-      <div class="block"></div>
-      <div class="socialTwo">
-        <a href="https://github.com/pandrea1003" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/paulacaicedocodes/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-
-      <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzZPer2zuU2jwp5KR8_clwdEh6kMdLwQzw2A4F1Ibslf_VQroKy/exec">
-        <div class="formElements">
-          <div class="row">
-            <div class="six columns">
-              <label for="exampleRecipientInput">Name</label>
-              <input name="name" class="u-full-width" type="text">
+        <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzZPer2zuU2jwp5KR8_clwdEh6kMdLwQzw2A4F1Ibslf_VQroKy/exec">
+          <div class="formElements">
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleRecipientInput">Name</label>
+                <input name="name" class="u-full-width" type="text">
+              </div>
+              <div class="six columns">
+                <label for="exampleEmailInput">Email</label>
+                <input name="email" class="u-full-width" type="email">
+              </div>
             </div>
-            <div class="six columns">
-              <label for="exampleEmailInput">Email</label>
-              <input name="email" class="u-full-width" type="email">
+            <div class="row">
+              <label for="exampleMessage">Message</label>
+              <textarea name="message" class="u-full-width"></textarea>
+              <button class="button" type="submit" value="Submit">Submit</button>
             </div>
           </div>
-          <div class="row">
-            <label for="exampleMessage">Message</label>
-            <textarea name="message" class="u-full-width"></textarea>
-            <button class="button" type="submit" value="Submit">Submit</button>
+          <div class="submitMessage formSub" style="display:none">
+            <h4>Thanks for reaching out! I'll be in touch with you soon!</h4>
           </div>
-        </div>
-        <div class="submitMessage formSub" style="display:none">
-          <h4>Thanks for reaching out! I'll be in touch with you soon!</h4>
-        </div>
-      </form>
+        </form>
 
-    </div>
-  </section>
-
-  <!-- Footer Section–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer>
-    <div class="container">
-      <div class="nav">
-        <p class="footer">&copy; Copyright 2018 Paula A. Caicedo</p>
       </div>
-    </div>
-  </footer>
+    </section>
+
+    <!-- Footer Section–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer>
+      <div class="container">
+        <div class="nav">
+          <p class="footer">&copy; Copyright 2018 Paula A. Caicedo</p>
+        </div>
+      </div>
+    </footer>
 
 
-  <noscript>
-    <style type="text/css">
-      .wallpaper {
-        animation-name: zoomOut;
-      }
-      .picture {
-        animation-name: dropIn;
-      }
-    </style>
-  </noscript>
+    <noscript>
+      <style type="text/css">
+        .wallpaper {
+          animation-name: zoomOut;
+        }
+
+        .picture {
+          animation-name: dropIn;
+        }
+      </style>
+    </noscript>
 
 
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-  <script defer type="text/javascript" src="assets/javascript/app.js"></script>
-  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+    <script defer type="text/javascript" src="assets/javascript/app.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
 </body>
 
 </html>
-

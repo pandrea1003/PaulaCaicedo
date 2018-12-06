@@ -66,9 +66,8 @@ body {
 }
 
 h1{
-  margin-top: 0;
-  font-weight: 300;
-  font-size: 1.6rem;
+	font-weight: 700;
+	font-family: 'Montserrat';
 }
 
 
@@ -114,12 +113,13 @@ header {
 	text-align: center;
 }
 .title .smallsep {
-	background: #fff;
+	background: rgb(95, 62, 62);
 	height: 2px;
 	width: 70px;
 	margin: auto;
 	/* margin-top: 30px; */
 	margin-bottom: 30px;
+	background: #0f4fff;
 }
 .title h1 {
 	font-size: 200%;
@@ -193,9 +193,9 @@ header {
 	max-height: 400px !important;
 }
 .sticky {
-	background-color: #000000bb;
+	background-color: #4a35c0bb;
 	color:#63b0f8;
-
+	font-size: 80%;
 	opacity: 1;
 	top: 0px;
 }
@@ -221,6 +221,7 @@ nav ul {
 	margin-bottom: 22px;
 	text-align: center;
 	width: 100%;
+	
 }
 }
 nav ul li {
@@ -277,7 +278,7 @@ nav ul a:hover {
 	bottom: 5vh;
 	display: block;
 	text-align: center;
-	font-size: 20px;
+	font-size: 50px;
 	z-index: 100;
 	text-decoration: none;
 	text-shadow: 0;
@@ -419,10 +420,10 @@ pre, blockquote, dl, figure, table, p, ol, form {
 } */
 
 /*  sections */
-#about {
+/* #about {
   padding-top: 12%;
   padding-bottom: 15%;
-}
+} */
 
 /* Image */
 
