@@ -13,9 +13,32 @@ html {
   }
 
   .row{
-    background: green;
+    background: firebrick;
+    max-width: 1000px !important;
+    width: 100%;
+    margin-top: 10px;
+
+
   }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-top: 10px;
+  }
+
+  .row,
+.row > figure {
+  padding: 0px;
+}
   
+
+figure{
+    float: left;
+    width: 30%;
+  
+}
   a {
     color: currentColor;
     cursor: pointer;
@@ -30,7 +53,6 @@ html {
     font-family: 'Montserrat';
     font-size: 80%;
     padding: 0.8rem;
-    background: red;
   }
   
 
@@ -72,12 +94,13 @@ html {
     display: flex;
     position: relative;
     min-height: 60vh;
-    padding-top: 20px;
+    padding-top: 10px;
     background: red;
 
+
   }
-/*   
-  .side {
+  
+  /* .side {
     max-height: 20rem;
     max-width: 20rem;
   } */
@@ -87,7 +110,6 @@ html {
     /* relative places the picture in the box */
     position: relative;
     width: 100%;
-    background: rgb(238, 234, 241);
   }
   
   .picture-shadow {
@@ -98,16 +120,16 @@ html {
   }
   
   .picture-image {
-    border-radius: 290486px;
+    /* border-radius: 290486px; */
     position: absolute;
   }
   
   .about {
     max-width: 20rem;
     background: orange;
-
+    margin-top: 10px;
+    padding-top: 10px;
   }
-
 
   
   header{
@@ -116,12 +138,6 @@ html {
     padding-top: 0%;
   }
 
-#portfolio{
-  background-color: #18BC9C !important;
-  padding: 6rem 0 !important;
-
-
-}
 
   hr.star-light,
 hr.star-dark {
@@ -142,25 +158,18 @@ hr.star-dark {
     font-size: 2.25rem;
     line-height: 1.125;
     margin-bottom: 0.5rem;
+
   }
   
   .job {
-    color:#63b0f8;
+    color:#052746;
     font-size: 0.85rem;
   }
   
-  /* .hr {
-    border: none;
-    content: "";
-    height: 1px;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
-    transform-origin: center left;
-    width: 4rem;
-  } */
   
   .description {
     font-size: 1.5rem;
+    padding: 20px;
   }
   
   /* button for resume */
@@ -173,7 +182,7 @@ hr.star-dark {
   
   .button {
     background-color: #fff;
-    border-radius: 290486px;
+    border-radius: 290400px;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     display: inline-block;
     font-size: 0.875rem;
@@ -299,24 +308,23 @@ hr.star-dark {
   
   /* Portfolio Section (images)  */
   .grid {
-       position: relative;
-       clear: both;
-      margin: 0 auto;
-  padding: 3rem 1rem;
+       /* position: relative;
+       clear: both; */
+      margin: 8px -16px;
+  /* padding: 3rem 1rem;
       list-style: none;
       text-align: center; 
       float: left;
-      width: 25%;
-  }
+      width: 25%; */
+      float: left;
+    width: 25%;
+    padding: 8px;
 
-  #Port{
-    max-width: 1000px;
-    margin: auto;
-    background: #fff !important;
-  }
+  } 
+
   
   /* Common style */
-  .grid figure {
+ /* figure {
       position: relative;
       float: left;
       overflow: hidden;
@@ -329,143 +337,66 @@ hr.star-dark {
       background: #0f1213;
       text-align: center;
       cursor: pointer;
-  }
+  } */
   
-  .grid figure img {
+  figure img {
       position: relative;
       display: block;
       min-height: 100%;
       max-width: 100%;
       opacity: 0.8;
+
   }
-  
-  .grid figure figcaption {
-      padding: 2em;
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 1.25em;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
-  }
-  
-  .grid figure figcaption::before,
-  .grid figure figcaption::after {
-      pointer-events: none;
-  }
-  
-  .grid figure figcaption,
-  .grid figure figcaption > a {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-  }
-  
-  /* Anchor will cover the whole item by default */
-  /* For some effects it will show as a button */
-  .grid figure figcaption > a {
-      z-index: 100;
-      text-indent: 200%;
-      white-space: nowrap;
-      font-size: 0;
-      opacity: 0;
-  }
-  
-  .grid figure h2 {
+ 
+
+ 
+  figure h2 {
       word-spacing: -0.15em;
       font-weight: 300;
+
+
   }
   
-  .grid figure h2 span {
+  figure h2 a {
       font-weight: 800;
+
   }
   
-  .grid figure h2,
-  .grid figure p {
+  figure h2,
+  figure p {
       margin: 0;
+
   }
   
-  .grid figure p {
+  figure p {
       letter-spacing: 1px;
       font-size: 68.5%;
+
+
   }
   
   /* portfolio effects */
   
-  figure.effect-jazz {
-    background:  rgb(5, 5, 5);
-  }
+   /* figure.effect-jazz {
+    width: 25%;
+    position: relative;
+    display: block;
+
+
+  } */
   
-  figure.effect-jazz img {
+  figure.effect-jazz img h2 p {
       opacity: 0.9;
-  }
-  
-  figure.effect-jazz figcaption::after,
-  figure.effect-jazz img,
-  figure.effect-jazz p {
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
-  }
-  
-  figure.effect-jazz figcaption::after {
-      position: absolute;
-      top: 0;
-      left: 0;
+      padding: 50px;
       width: 100%;
       height: 100%;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      content: '';
-      opacity: 0;
-      -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
-      transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
-      -webkit-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
+      position: relative;
+      float: left;
+      overflow: hidden;
+      margin: 10px 1%;
   }
   
-  figure.effect-jazz h2,
-  figure.effect-jazz p {
-      opacity: 1;
-      -webkit-transform: scale3d(0.8,0.8,1);
-      transform: scale3d(0.8,0.8,1);
-  }
-  
-  figure.effect-jazz h2 {
-      padding-top: 9%;
-      -webkit-transition: -webkit-transform 0.35s;
-      transition: transform 0.35s;
-      font-size: 1.9rem;
-  }
-  
-  figure.effect-jazz p {
-    position: absolute;
-      padding: 0.5em 2em;
-      text-transform: none;
-      font-size: 0.85em;
-    opacity: 0;
-    z-index: 2000;
-  }
-  
-  figure.effect-jazz:hover img {
-      opacity: 0.35;
-      -webkit-transform: scale3d(1.05,1.05,1);
-      transform: scale3d(1.05,1.05,1);
-  }
-  
-  figure.effect-jazz:hover figcaption::after {
-      opacity: 1;
-      -webkit-transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
-      transform: rotate3d(0,0,1,45deg) scale3d(1,1,1);
-  }
-  
-  figure.effect-jazz:hover h2,
-  figure.effect-jazz:hover p {
-      opacity: 1;
-      -webkit-transform: scale3d(1,1,1);
-      transform: scale3d(1,1,1);
-  }
-  
+
   
   /* Media queries */
   
@@ -474,19 +405,10 @@ hr.star-dark {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 100px 0 100px 0;
     box-sizing: border-box;
     }
   
-    .content {
-      padding: 0 10px;
-      /* text-align: center; */
-    }
-    .container:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
   
     ul{
       padding-left: 40%;
@@ -567,6 +489,8 @@ hr.star-dark {
    background: pink;
     padding: 100px 0 100px 0;
     max-width: auto;
+
+
     }
   }
   
