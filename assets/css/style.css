@@ -1,145 +1,15 @@
 html {
-  background: purple;
-    background-image: none;
-    font-family: 'Share', cursive;
-    color: #fff;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.5;
-    min-height: 100vh;
-    min-width: 100px;
-    overflow-x: hidden;
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .row{
-    background: firebrick;
-    max-width: 1000px !important;
-    width: 100%;
-    margin-top: 10px;
-
-
-  }
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin-top: 10px;
-  }
-
-  .row,
-.row > figure {
-  padding: 0px;
+ 
+  color: #fff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
-  
-
-figure{
-    float: left;
-    width: 30%;
-  
-}
-  a {
-    color: currentColor;
-    cursor: pointer;
-    text-decoration: none;
-
-  }
-
-  nav{
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    font-weight: 700;
-    font-family: 'Montserrat';
-    font-size: 80%;
-    padding: 0.8rem;
-  }
-  
-
-  /* 2. Shared */
-  
-  .wallpaper,
-  .picture-shadow,
-  .picture-image {
-    display: block;
-    height: 100%;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-  
-  .job,
-  .button {
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-  }
-  
-  .button,
-  .social a {
-    transform-origin: center;
-    transition-duration: 100ms;
-  }
-  
-  /* 3. Specific */
-  
-  .wallpaper {
-    background-position: center;
-    background-size: cover;
-    opacity: 0.2;
-    position: fixed;
-
-  }
-  
-  .content {
-    display: flex;
-    position: relative;
-    min-height: 60vh;
-    padding-top: 10px;
-    background: red;
-
-
-  }
-  
-  /* .side {
-    max-height: 20rem;
-    max-width: 20rem;
-  } */
-  
-  .picture {
-    padding-top: 100%;
-    /* relative places the picture in the box */
-    position: relative;
-    width: 100%;
-  }
-  
-  .picture-shadow {
-    border-radius: 290486px;
-    background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
-    position: absolute;
-    top: 10%;
-  }
-  
-  .picture-image {
-    /* border-radius: 290486px; */
-    position: absolute;
-  }
-  
-  .about {
-    max-width: 20rem;
-    background: orange;
-    margin-top: 10px;
-    padding-top: 10px;
-  }
-
-  
-  header{
-    background-color: #18BC9C !important;
-    padding: 6rem 0 !important;
-    padding-top: 0%;
-  }
-
-
-  hr.star-light,
+hr.star-light,
 hr.star-dark {
   max-width: 15rem;
   padding: 0;
@@ -150,350 +20,527 @@ hr.star-dark {
   margin-bottom: 2.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+hr.star-light {
   border-color: #fff;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #18BC9C;
+}
+
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.row{
+  background: firebrick;
+  max-width: 1000px !important;
+  width: 100%;
+  margin-top: 10px;
+
 
 }
 
-  .name {
-    font-size: 2.25rem;
-    line-height: 1.125;
-    margin-bottom: 0.5rem;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-top: 10px;
+}
 
-  }
-  
-  .job {
-    color:#052746;
-    font-size: 0.85rem;
-  }
-  
-  
-  .description {
-    font-size: 1.5rem;
-    padding: 20px;
-  }
-  
-  /* button for resume */
-  .contact {
-    display: inline-block;
-    margin-bottom: 0;
-    /* margin-top: 1.5rem; */
-    vertical-align: top;
-  } 
-  
-  .button {
-    background-color: #fff;
-    border-radius: 290400px;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    font-size: 0.875rem;
-    line-height: 1;
-    padding: 1.25em 2em;
-    text-shadow: none;
-    transition-property: box-shadow, transform;
-    user-select: none;
-    vertical-align: top;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
-  }
-  
-  .button:hover {
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-    transform: scale(1.02) translateY(-4px);
-  }
-  
-  .button:active {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    transform: scale(0.98) translateY(-2px);
-  }
-  
-  .social {
-    display: flex;
-  }
-  
-  .social li {
-    height: 2rem;
-    margin-right: 0.5rem;
-    text-align: center;
-    width: 2rem;
-  }
-  
-  .social a {
-    align-items: center;
-    display: flex;
-    font-size: 1.5rem;
-    height: 2rem;
-    justify-content: center;
-    opacity: 0.5;
-    transition-property: opacity, transform;
-    width: 2rem;
-    will-change: opacity, transform;
-  }
-  
-  .socialTwo a {
-    font-size: 1.5rem;
-    height: 2rem;
-    opacity: 0.5;
-    transition-property: opacity, transform;
-    width: 2rem;
-    will-change: opacity, transform;
-  
-  }
-  
-  .social a:hover {
-    opacity: 1;
-    transform: scale(1.25);
-  }
-  
-  .social a:active {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-  
-  .socialTwo {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  /* 4. Responsiveness */
-  
-  @media screen and (max-width: 799px) {
-    .content {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      /* padding: 5rem 3rem; */
-    }
-  
-    .side {
-      margin-bottom: 3rem;
-      width: 100%;
-      flex-grow: 0;
-      flex-shrink: 0;
-      height: 14rem;
-      width: 14rem;
-    }
-  
-    .social {
-      text-align: center;
-      /* position: relative; */
-    }
-  }
-  
-  @media screen and (min-width: 800px) {
-    .content {
-      align-items: center;
-      justify-content: space-around;
-      justify-content: space-evenly;
-      /* padding: 4rem; */
-    }
+.row,
+.row > figure {
+padding: 0px;
+}
 
-   
-  
-    .side {
-      flex-grow: 0;
-      flex-shrink: 0;
-      height: 20rem;
-      margin-right: 4rem;
-      order: 2;
-      width: 20rem;
-    }
-  
-    .about {
-      flex-grow: 1;
-      flex-shrink: 1;
-    }
-  }
-  
-  
-  
-  
-  /* Portfolio Section (images)  */
-  .grid {
-       /* position: relative;
-       clear: both; */
-      margin: 8px -16px;
-  /* padding: 3rem 1rem;
-      list-style: none;
-      text-align: center; 
-      float: left;
-      width: 25%; */
-      float: left;
-    width: 25%;
-    padding: 8px;
+hr.star-light,
+hr.star-dark {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  } 
+figure{
+  float: left;
+  width: 30%;
 
-  
-  /* Common style */
- /* figure {
-      position: relative;
-      float: left;
-      overflow: hidden;
-      margin: 10px 1%;
-      min-width: 470px;
-      max-width: 480px;
-      max-height: 360px;
-      width: 48%;
-      height: auto;
-      background: #0f1213;
-      text-align: center;
-      cursor: pointer;
-  } */
-  
-  figure img {
-      position: relative;
-      display: block;
-      min-height: 100%;
-      max-width: 100%;
-      opacity: 0.8;
+}
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
 
-  }
- 
+}
 
- 
-  figure h2 {
-      word-spacing: -0.15em;
-      font-weight: 300;
+nav{
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size: 80%;
+  padding: 0.8rem;
+}
 
+/* 2. Shared */
 
-  }
-  
-  figure h2 a {
-      font-weight: 800;
+.wallpaper,
+.picture-shadow,
+.picture-image {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 
-  }
-  
-  figure h2,
-  figure p {
-      margin: 0;
+.job,
+.button {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
 
-  }
-  
-  figure p {
-      letter-spacing: 1px;
-      font-size: 68.5%;
+.button,
+.social a {
+  transform-origin: center;
+  transition-duration: 100ms;
+}
 
+/* 3. Specific */
 
-  }
-  
-  /* portfolio effects */
-  
-   /* figure.effect-jazz {
-    width: 25%;
+.wallpaper {
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  position: fixed;
+}
+
+.content {
+  display: flex;
     position: relative;
-    display: block;
+    min-height: 60vh;
+    padding-top: 15px;
+    background: red;
+}
+
+.side {
+  max-height: 20rem;
+  max-width: 20rem;
+}
+
+.picture {
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.picture-shadow {
+  border-radius: 290486px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
+  top: 10%;
+}
+
+.picture-image {
+  border-radius: 290486px;
+  position: absolute;
+}
+
+.about {
+  max-width: 26rem;
+}
+
+.name {
+ 
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+  font-size: 49.1818px;
+}
+
+.job {
+  color:#022e57;
+  font-size: 0.85rem;
+}
 
 
-  } */
-  
-  figure.effect-jazz img h2 p {
-      opacity: 0.9;
-      padding: 50px;
-      width: 100%;
-      height: 100%;
-      position: relative;
-      float: left;
-      overflow: hidden;
-      margin: 10px 1%;
-  }
-  
+.description {
+  font-size: 1.5rem;
+}
 
-  
-  /* Media queries */
-  
-  .container {
-    position: relative;
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 100px 0 100px 0;
-    box-sizing: border-box;
-    }
-  
-  
-    ul{
-      padding-left: 40%;
-      background: #0f1213;
+.contact {
+  display: inline-block;
+  margin-bottom: 0;
+  /* margin-top: 1.5rem; */
+  vertical-align: top;
+} 
 
-    }
-  
-  @media screen and (min-width: 800px) {
-  
-    .content {
-          padding: 0 10px;
-          text-align: center;
-      }
-      .grid figure {
-          display: inline-block;
-          float: none;
-          margin: 10px auto;
-          width: 100%;
-      }
-  }
-  
-  
-  /* Media queries */
-  
-  @media screen and (max-width: 799px) {
+.button {
+  background-color: #fff;
+  border-radius: 290486px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  font-size: 0.875rem;
+  line-height: 1;
+  padding: 1.25em 2em;
+  text-shadow: none;
+  transition-property: box-shadow, transform;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.button:hover {
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transform: scale(1.02) translateY(-4px);
+}
+
+.button:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transform: scale(0.98) translateY(-2px);
+}
+
+.social {
+  display: flex;
+}
+
+.social li {
+  height: 2rem;
+  margin-right: 0rem;
+  text-align: center;
+  width: 2rem;
+}
+
+.social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+}
+
+.socialTwo a {
+  font-size: 1.5rem;
+  height: 2rem;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+
+}
+
+.social a:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.social a:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.socialTwo {
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* 4. Responsiveness */
+
+@media screen and (max-width: 799px) {
   .content {
-    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5rem 3rem; */
+  }
+
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 14rem;
+    width: 14rem;
+  }
+
+  .social {
     text-align: center;
-    margin: 5%;
+    /* position: relative; */
   }
-  .grid figure {
-    float: none;
-    width: 100%;
-    min-width: 340px;
-    max-width: 360px;
-    max-height: 340px;
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    /* padding: 4rem; */
   }
-  figure.effect-jazz h2 {
-      padding-top: 4%;
-      -webkit-transition: -webkit-transform 0.35s;
-      transition: transform 0.35s;
-      font-size: 1.5rem;
+
+  .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4rem;
+    order: 2;
+    width: 20rem;
   }
-  
-  figure.effect-jazz p {
-    font-size: 0.68em;
+
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
   }
-  
+}
+
+
+
+
+/* Portfolio Section (images)  */
+.row {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 470px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	height: auto;
+	background: #0f1213;
+	text-align: center;
+	cursor: pointer;
+}
+
+figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+
+
+ figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+ figure h2 span {
+	font-weight: 800;
+}
+
+figure h2,
+ figure p {
+	margin: 0;
+}
+
+figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* portfolio effects */
+/* 
+figure.effect-jazz {
+  background:  rgb(5, 5, 5);
+}
+
+figure.effect-jazz img {
+	opacity: 0.9;
+} */
+
+figure.effect-jazz figcaption::after,
+figure.effect-jazz img,
+figure.effect-jazz p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+} 
+
+
+/* Media queries */
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
   }
-  
-  
-  @media (min-width: 600px) {
-  .container {
-    width: 60%;
-    padding: 0;
+
+  .content {
+    padding: 0 10px;
   }
-  .grid figure {
-    float: none;
-    width: 100%;
-    min-width: 300px;
-    max-width: 450px;
-    max-height: 360px;
+  .container:after {
+  content: "";
+  display: table;
+  clear: both;
   }
-  
-  
-  figure.effect-jazz p {
-      font-size: 0.72em;
+
+  ul{
+    padding-left: 32.5%;
+  }
+
+@media screen and (min-width: 800px) {
+
+  .content {
+        padding: 0 10px;
+        text-align: center;
     }
-  
-  figure.effect-jazz h2 {
-    padding-top: 5%;
+    figure {
+        display: inline-block;
+        float: none;
+        margin: 10px auto;
+        width: 100%;
+    }
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 799px) {
+.content {
+  padding: 0;
+  text-align: center;
+  margin: 5%;
+}
+figure {
+  float: none;
+  width: 100%;
+  min-width: 340px;
+  max-width: 360px;
+  max-height: 340px;
+}
+figure.effect-jazz h2 {
+	padding-top: 4%;
+	-webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    font-size: 1rem;
+    background: blue !important;
+
+}
+
+figure.effect-jazz p {
+  padding-top: 4%;
+	-webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    font-size: 10px;
+    background: purple !important;
+}
+
+#about {
+  padding: 100px 0 100px 0;
+  background: #d24d57 url(../images/Stairs.jpg) 50% 0 no-repeat fixed;
+  padding: 2.5em 0;}
+
+.picture-image {
+  border-radius: 20px;
+  position: absolute;
+}
+}
+
+@media (min-width: 600px) {
+.container {
+  width: 60%;
+  padding: 0;
+}
+figure {
+  float: none;
+  width: 100%;
+  min-width: 300px;
+  max-width: 450px;
+  max-height: 360px;
+}
+
+
+figure.effect-jazz p {
+  padding-top: 4%;
+	-webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    font-size: 10px;
+    background: purple !important;
+
+  }
+
+figure.effect-jazz h2 {
+
+    padding-top: 4%;
     -webkit-transition: -webkit-transform 0.35s;
       transition: transform 0.35s;
-      font-size: 1.9rem;
-    }
-  
-  #about, #portfolio {
-   background: pink;
+      font-size: 1rem;
+      background: blue !important;
+  }
+
+  #about {
     padding: 100px 0 100px 0;
-    max-width: auto;
-
-
-    }
-  }
+    background: #016052 url(../images/Stairs.jpg) no-repeat !important;
+}
   
-  .footer {
-    text-align: center;
-  }
+}
+
+#about, #portfolio {
+   padding: 100px 0 100px 0;
+}
+
+#contact{
+  background: #d24d57;
+  color: #fff;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+footer {
+  text-align: center;
+}
+
+.icon-mail:before {
+  content: "\e003";
+}
+
+#send-mail{
+  position: relative;
+  text-indent: 30px;
+  margin: 3em auto 5em auto;
+  color: #fff;
+  border-color: rgb(24, 2, 2);
+  font-size: 1em;
+  padding: 1.5em 0;
+}
+
+#contact #send-mail span {
+  margin-right: 20px;
+  font-size: 1.625em;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  line-height: 60px;
+  top: 0;
+  left: 0;
+  text-indent: 0;
+}
+
+

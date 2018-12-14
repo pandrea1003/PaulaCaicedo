@@ -19,6 +19,7 @@
 
   <!-- Custom Fonts -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet"
     type="text/css">
 
@@ -31,68 +32,64 @@
 </head>
 
 <body>
+
   <div id="header">
     <div class="main_nav">
-      <!-- <div class="container"> -->
-      <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
-      <nav>
-        <ul>
-          <li><a class="smoothscroll" href="#header">Home</a></li>
-          <li><a class="smoothscroll" href="#about">About Me</a></li>
-          <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
-          <li><a class="smoothscroll" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- </div> -->
+      <div class="container">
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About Me</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Portfolio</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <header>
       <div id="wallpaper" class="wallpaper"></div>
-      <!-- <div class="content"> -->
-      <aside class="side" >
-        <figure id="picture" class="picture">
-          <div class="picture-shadow"></div>
-          <img id="pictureImage" class="picture-image" src="images/PaulaC.jpg" alt="Image of Paula Caicedo" width="3500"
-            height="350">
-      </aside>
-
-      <main class="about">
-        <h1 class="name">
-          Paula Caicedo
-        </h1>
-        <hr class="star-light">
-        <p class="job">
-          Full Stack Web Developer
-        </p>
-        <hr class="hr">
-        <div class="description">
-          <p>
-            Lets Create an Incredible Future!
-          </p>
-        </div>
-        <div class="contact">
-          <a class="button" href="./images/Resume-_.docx" download="Paula_Caicedo_Resume" target="_blank">
-            Resume
-          </a>
-        </div>
+      <div class="content">
+        <aside class="side">
+          <figure id="picture" class="picture">
+            <!-- <div class="picture-shadow"></div> -->
+            <img id="pictureImage" class="picture-image" src="images/PaulaC.jpg" alt="Image of Paula Caicedo" width="3500"
+              height="350">
+          </figure>
         </aside>
+        <main class="about">
+          <h1 class="name">
+            Paula Caicedo
+          </h1>
+          <hr class="star-light">
+          <p class="job">
+            Full Stack Web Developer
+          </p>
+          <hr class="star-light">
+          <ul class="social">
+            <a href="https://github.com/pandrea1003" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/paulacaicedocodes/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
 
-      </figure>
+          </ul>
+          <div class="contact">
+            <a class="button" href="./images/Resume-_.docx" download="Paula_Caicedo_Resume" target="_blank">
+              Resume
+            </a>
 
-        <ul class="social">
-          <a href="https://github.com/pandrea1003" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/paulacaicedocodes/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a>
+          </div>
 
-        </ul>
+        </main>
 
-        <!-- </div> -->
-        <a class="smoothscroll" href="#about">
-          <div class="scroll-down"></div>
-        </a>
-      </main>
+      </div>
+      <a class="smoothscroll" href="#about">
+        <div class="scroll-down"></div>
+      </a>
+
+
     </header>
 
     <!-- About Section
@@ -102,18 +99,28 @@
         <h1 class="text-center text-uppercase text-white">About Me</h1>
         <hr class="hr">
         <div class="block"></div>
-        <div class="content">
-
+        <!-- <div class="content"> -->
+        <div class="row">
           <img class="photo" src="images/Stairs.jpg" alt="aboutMePhoto">
 
           <div class="col-lg-4 mr-auto">
-            <p class="lead">Whether you're a student looking to showcase your work, a professional looking to attract
-              clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+            <p class="lead">
+              My name is Paula and i recently graduated from UCF's Codding bootcamp below you can see 
+              the three main projects I worked on while compliting the program. My background is in finance and law but 
+              I fell inlove with web developing when I help my parents build thier compnaies website.   
+              </p>
+            <p>Apart from 
+            </p>
           </div>
-        </div>
 
+          <a class="smoothscroll" href="#portfolio">
+            <div class="scroll-down"></div>
+          </a>
+          <!-- </div> -->
+        </div>
       </div>
     </section>
+
 
     <!-- Portfolio Section
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -124,91 +131,92 @@
         <hr class="hr">
         <div class="block"></div>
         <div class="row">
-         
-              <!-- CoffeeME -->
-                <!-- <div class="col-lg-4 mx-auto"> -->
-                <figure class="effect-jazz" >
-                  <img src="./images/CoffeeME.png" alt="CoffeeME" />
-                  <h2 class="text-secondary text-uppercase mb-0">CoffeeMe<span></span></h2>
-                  <p>Coffee Shop Finding App<br><br>
-                    Application built with GoogleMaps API, HTML, CSS, JavaScript <br><br>
-                    <a class="links" onclick="portfolioLinks('https://ahmedharazi.github.io/COFFEE-ME/')">
-                      <i class="fas fa-desktop"></i>
-                      Visit Site
-                    </a>
-                    <a class="links" onclick="portfolioLinks('https://github.com/ahmedharazi/COFFEE-ME')"><i class="fab fa-github"></i>
-                      GitHub Repo</a>
-                    <br><br>
-                  </p>
-            </figure>
-          
-            <!-- Back2 -->
-           
-                  <figure class="effect-jazz">
-                    <img src="images/Back2.png" alt="Back2" />
-                    <h2>Back2<span></span></h2>
-                    <p>Student share teacher and book reviews <br><br>
-                      Application built with HTML, CSS, JavaScript, Facebook API React, Node, Express, & mySQL<br><br>
+          <p>
+              Below you can see some projects I've been working on lately. Enjoy!
+          </p>
 
-                      <a class="links" onclick="portfolioLinks('https://back2.herokuapp.com/index')"><i class="fas fa-desktop"></i>
-                        Visit Site</a>
-                      <a class="links" onclick="portfolioLinks('https://github.com/TheTTimeLives/Project-Two')"><i
-                          class="fab fa-github"></i>
-                        GitHub Repo</a>
-                      <br><br>
-                    </p>
-                    <a class="effect" href="#!"></a>
-               
-            
-            </figure>
-       
-            <!-- BeautyGeek -->
-           
+          <!-- CoffeeME -->
+          <!-- <div class="col-lg-4 mx-auto"> -->
+          <figure class="effect-jazz">
+            <img src="./images/CoffeeME.png" alt="CoffeeME" />
+            <h2 class="text-secondary text-uppercase mb-0">CoffeeMe<span></span></h2>
+            <p>Coffee Shop Finding App<br><br>
+              Application built with GoogleMaps API, HTML, CSS, JavaScript <br><br>
+              <a class="links" onclick="portfolioLinks('https://ahmedharazi.github.io/COFFEE-ME/')">
+                <i class="fas fa-desktop"></i>
+                Visit Site</a>
+              <a class="links" onclick="portfolioLinks('https://github.com/ahmedharazi/COFFEE-ME')"><i class="fab fa-github"></i>
+                GitHub Repo</a>
+              <br><br>
+            </p>
+          </figure>
 
-                <figure class="effect-jazz">
-                  <img src="images/BeautyGeek.png" alt="BeautyGeek" />
+          <!-- Back2 -->
 
-                  <h2>BeautyGeek <span></span></h2>
-                  <p>Makeup review and shop site <br><br>
-                    Application built with HTML, CSS, JavaScript, React, Node, Express, & MongoDB. <br><br>
-                    <a class="links" onclick="portfolioLinks('https://fierce-thicket-52912.herokuapp.com/')"><i
-                        class="fas fa-desktop"></i>
-                      Visit Site</a>
-                    <a class="links" onclick="portfolioLinks('https://github.com/pandrea1003/BeautyGeek')"><i class="fab fa-github"></i>
-                      GitHub Repo</a>
-                    <br><br>
-                  </p>
-                  <a class="effect" href="#!"></a>
-             
-         
-            </figure>
-            <!-- add another one -->
-            
-              <figure class="effect-jazz">
-                <img src="images/GIF.png" alt="GIFS" />
-                <h2>GIFTastic</h2>
-                <p>Find your favorite GIFS <br><br>
-                  Application built with HTML, CSS, JavaScript, GIF API. <br><br>
-                  <a class="links" onclick="portfolioLinks('https://pandrea1003.github.io/GIFtastic/')"><i class="fas fa-desktop"></i>
-                    Visit Site</a>
-                  <a class="links" onclick="portfolioLinks('https://github.com/pandrea1003/GIFtastic')"><i class="fab fa-github"></i>
-                    GitHub Repo</a>
-                  <br><br>
-                </p>
+          <figure class="effect-jazz">
+            <img src="images/Back2.png" alt="Back2" />
+            <h2>Back2<span></span></h2>
+            <p>Student share teacher and book reviews <br><br>
+              Application built with HTML, CSS, JavaScript, Facebook API React, Node, Express, & mySQL<br><br>
 
-                <a class="effect" href="#!"></a>
-          
-            </figure>
+              <a class="links" onclick="portfolioLinks('https://back2.herokuapp.com/index')"><i class="fas fa-desktop"></i>
+                Visit Site</a>
+              <a class="links" onclick="portfolioLinks('https://github.com/TheTTimeLives/Project-Two')"><i class="fab fa-github"></i>
+                GitHub Repo</a>
+              <br><br>
+            </p>
+            <a class="effect" href="#!"></a>
+
+
+          </figure>
+
+          <!-- BeautyGeek -->
+
+
+          <figure class="effect-jazz">
+            <img src="images/BeautyGeek.png" alt="BeautyGeek" />
+
+            <h2>BeautyGeek <span></span></h2>
+            <p>Makeup review and shop site <br><br>
+              Application built with HTML, CSS, JavaScript, React, Node, Express, & MongoDB. <br><br>
+              <a class="links" onclick="portfolioLinks('https://fierce-thicket-52912.herokuapp.com/')"><i class="fas fa-desktop"></i>
+                Visit Site</a>
+              <a class="links" onclick="portfolioLinks('https://github.com/pandrea1003/BeautyGeek')"><i class="fab fa-github"></i>
+                GitHub Repo</a>
+              <br><br>
+            </p>
+            <a class="effect" href="#!"></a>
+
+
+          </figure>
+          <!-- add another one -->
+
+          <figure class="effect-jazz">
+            <img src="images/GIF.png" alt="GIFS" />
+            <h2>GIFTastic</h2>
+            <p>Find your favorite GIFS <br><br>
+              Application built with HTML, CSS, JavaScript, GIF API. <br><br>
+              <a class="links" onclick="portfolioLinks('https://pandrea1003.github.io/GIFtastic/')"><i class="fas fa-desktop"></i>
+                Visit Site</a>
+              <a class="links" onclick="portfolioLinks('https://github.com/pandrea1003/GIFtastic')"><i class="fab fa-github"></i>
+                GitHub Repo</a>
+              <br><br>
+            </p>
+
+            <a class="effect" href="#!"></a>
+
+          </figure>
 
         </div>
       </div>
     </section>
 
+
     <!-- Contact Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <section id="contact">
       <div class="container">
-        <h1>Contact</h1>
+        <h1>Lets create something great!</h1>
         <hr class="hr">
         <div class="block"></div>
         <div class="socialTwo">
@@ -220,9 +228,14 @@
           </a>
         </div>
         <ul>
+          <li>
+            <!-- <i class="fa fa-envelope-o fa-fw"></i> -->
+            <a id="send-mail" href="mailto:paulacaicedo03@hotmail.com.com">
+              <span aria-hidden="true" class="icon-mail" target="_blank" class="button">
 
-          <i class="fa fa-envelope-o fa-fw"></i>
-          <a href="mailto:paulacaicedo03@hotmail.com.com">pcaicedo03@hotmail.com</a>
+              </span>
+              "Get in touch"
+            </a>
           </li>
         </ul>
 
@@ -249,6 +262,8 @@
           animation-name: dropIn;
         }
       </style>
+
+
     </noscript>
 
 
