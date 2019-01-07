@@ -25,10 +25,6 @@ hr.star-light {
   border-color: #fff;
 }
 
-hr.star-light:after {
-  color: #fff;
-  background-color: #18BC9C;
-}
 
 a {
   color: currentColor;
@@ -41,11 +37,58 @@ a {
   max-width: 1000px !important;
   width: 100%;
   margin-top: 10px;
-
+  padding: 30px;
+  overflow: hidden;
 
 }
 
-.row:after {
+
+
+/* 
+.line {
+  margin: 8px -16px;
+  
+} */
+
+/* Add padding BETWEEN each column (if you want) */
+.line,
+.line > .column {
+  padding: 7px;
+}
+
+
+/* Clear floats after rows */ 
+.line:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#services{
+  overflow: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  background: blue;
+  height: auto;
+}
+
+.service-item strong {
+  margin-bottom: 5px;
+  border: 10px solid green;
+  padding: 25px;
+  margin: 10px;
+  float: left;
+  clear: left;
+  overflow: hidden;
+  line-height: normal;
+  line-height: 30px;
+}
+
+
+.line :after {
   content: "";
   display: table;
   clear: both;
@@ -55,26 +98,11 @@ a {
 .row,
 .row > figure {
 padding: 0px;
-}
-
-hr.star-light,
-hr.star-dark {
-  max-width: 15rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-figure{
-  float: left;
-  width: 30%;
+clear: both;
 
 }
+
+
 a {
   color: currentColor;
   cursor: pointer;
@@ -85,10 +113,10 @@ a {
 nav{
   padding-top: 1rem;
   padding-bottom: 3rem;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Montserrat';
-  font-size: 80%;
-  padding: 0.8rem;
+  font-size: 75%;
+  padding: 0.9rem;
 }
 
 /* 2. Shared */
@@ -97,10 +125,10 @@ nav{
 .picture-shadow,
 .picture-image {
   display: block;
-  height: 100%;
+  height: 50%;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 75%;
 }
 
 .job,
@@ -129,7 +157,7 @@ nav{
     position: relative;
     min-height: 60vh;
     padding-top: 15px;
-    background: red;
+    border: #d24d57
 }
 
 .side {
@@ -144,8 +172,7 @@ nav{
 }
 
 .picture-shadow {
-  border-radius: 290486px;
-  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  /* border-radius: 290486px; */
   position: absolute;
   top: 10%;
 }
@@ -279,6 +306,8 @@ nav{
     text-align: center;
     /* position: relative; */
   }
+
+  
 }
 
 @media screen and (min-width: 800px) {
@@ -318,20 +347,19 @@ nav{
 	text-align: center;
 }
 
+
+
 /* Common style */
 figure {
 	position: relative;
 	float: left;
-	overflow: hidden;
 	margin: 10px 1%;
 	min-width: 470px;
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
 	height: auto;
-	background: #0f1213;
 	text-align: center;
-	cursor: pointer;
 }
 
 figure img {
@@ -342,16 +370,11 @@ figure img {
 	opacity: 0.8;
 }
 
-
-
  figure h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
 }
 
- figure h2 span {
-	font-weight: 800;
-}
 
 figure h2,
  figure p {
@@ -360,25 +383,28 @@ figure h2,
 
 figure p {
 	letter-spacing: 1px;
-	font-size: 68.5%;
+	font-size: 80%;
 }
 
 /* portfolio effects */
-/* 
-figure.effect-jazz {
+
+.effect-jazz {
   background:  rgb(5, 5, 5);
+  border-width: 1px;
+  clear: left;
+
 }
 
 figure.effect-jazz img {
 	opacity: 0.9;
-} */
+}
 
-figure.effect-jazz figcaption::after,
+/* figure.effect-jazz figcaption::after,
 figure.effect-jazz img,
 figure.effect-jazz p {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-} 
+}  */
 
 
 /* Media queries */
@@ -403,26 +429,33 @@ figure.effect-jazz p {
 
   ul{
     padding-left: 32.5%;
+    padding-right: 32.5%;
   }
 
-@media screen and (min-width: 800px) {
+ 
 
-  .content {
-        padding: 0 10px;
+@media screen and (min-width: 799px) {
+
+  .content  {
+        padding: 0 10px 0px 10px;
         text-align: center;
+        position: relative;
     }
-    figure {
+    .row figure {
         display: inline-block;
         float: none;
         margin: 10px auto;
         width: 100%;
+        position: relative;
     }
+
+
 }
 
 
 /* Media queries */
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 800px) {
 .content {
   padding: 0;
   text-align: center;
@@ -431,23 +464,20 @@ figure.effect-jazz p {
 figure {
   float: none;
   width: 100%;
-  min-width: 340px;
-  max-width: 360px;
-  max-height: 340px;
+  min-width: 300px;
+  max-width: 450px;
+  max-height: 360px;
 }
-figure.effect-jazz h2 {
+
+.row figure.effect-jazz h2 {
 	padding-top: 4%;
-	-webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
     font-size: 1rem;
     background: blue !important;
 
 }
 
-figure.effect-jazz p {
+.row figure.effect-jazz p {
   padding-top: 4%;
-	-webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
     font-size: 10px;
     background: purple !important;
 }
@@ -458,17 +488,17 @@ figure.effect-jazz p {
   padding: 2.5em 0;}
 
 .picture-image {
-  border-radius: 20px;
+  border-radius: 25px;
   position: absolute;
 }
 }
 
 @media (min-width: 600px) {
-.container {
+.row .container {
   width: 60%;
   padding: 0;
 }
-figure {
+.row figure {
   float: none;
   width: 100%;
   min-width: 300px;
@@ -477,7 +507,7 @@ figure {
 }
 
 
-figure.effect-jazz p {
+.row figure.effect-jazz p {
   padding-top: 4%;
 	-webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -486,7 +516,7 @@ figure.effect-jazz p {
 
   }
 
-figure.effect-jazz h2 {
+.row figure.effect-jazz h2 {
 
     padding-top: 4%;
     -webkit-transition: -webkit-transform 0.35s;
@@ -502,8 +532,9 @@ figure.effect-jazz h2 {
   
 }
 
-#about, #portfolio {
-   padding: 100px 0 100px 0;
+#about, #portfolio, {
+   padding: 100px 0 100px 0 !important;
+
 }
 
 #contact{
@@ -515,32 +546,29 @@ figure.effect-jazz h2 {
 
 footer {
   text-align: center;
+
 }
 
-.icon-mail:before {
-  content: "\e003";
-}
+
 
 #send-mail{
+  font-size: .8em;
+  text-align: center;
+  display: block;
   position: relative;
-  text-indent: 30px;
-  margin: 3em auto 5em auto;
-  color: #fff;
-  border-color: rgb(24, 2, 2);
-  font-size: 1em;
-  padding: 1.5em 0;
+  background: #45b29a;
+  padding: .75em 2em .75em 3.5em;
+  color: #1b7f69;
+  text-decoration: none;
+  margin: 1.5em 0 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-weight: 400;
+  border: 0;
+  font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  text-transform: uppercase;
 }
 
-#contact #send-mail span {
-  margin-right: 20px;
-  font-size: 1.625em;
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  line-height: 60px;
-  top: 0;
-  left: 0;
-  text-indent: 0;
-}
 
 
