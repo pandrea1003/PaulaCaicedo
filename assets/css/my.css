@@ -7,7 +7,6 @@ body {
 }
 
 
-
 .hr {
 	background-image: linear-gradient(to right,#63b0f8,  #63b0f8);
 }
@@ -105,6 +104,14 @@ header {
 	background-size: 100%;
 	background: rgb(83, 160, 231) !important;
 }
+.title {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	padding: 2rem;
+	max-width: 960px;
+	text-align: center;
+}
 
 .title h1 {
 	font-size: 70px;
@@ -144,7 +151,7 @@ header {
 	transition: all 0.3s;
 	opacity: 0;
 	top: -100px;
-	padding-bottom: 10px;
+	padding-bottom: 6px;
 	color: #18BC9C;
 }
 
@@ -302,8 +309,9 @@ opacity: 0;
 /* Contact Section
 ********************************************************************* */
 #contact {
-  padding: 100px 0 100px 0;
+  padding: 25px;
   max-width: auto;
+  max-height: 25px;
 }
 
 
@@ -337,7 +345,7 @@ button, .button {
 
 .photo {
 	/* border-radius: 2904px; */
-	float: left;
+	float: center;
 	max-height: 100rem;
 	max-width: 100rem;
 	/* align-self: center; */
@@ -346,7 +354,7 @@ button, .button {
   
   @media screen and (max-width: 799px) {
 	.photo {
-	  border-radius: 2904px;
+	  /* border-radius: 2904px; */
 	  max-height: 10rem;
 	  max-width: 10rem;    
 	  margin-right: 4%;
@@ -362,8 +370,46 @@ button, .button {
 	  margin-right: 2%;
   }
   }
+/* Services display */
+p{
+	text-align: center;
+color: black;
+font-size: 1em;
+line-height: 2em;
+margin-bottom: 1.5em;
+display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
-
+h3{
+	font-size: 2em;
+    line-height: 1em;
+	margin-bottom: 1em;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-family: 'franklin-gothic-urw-cond', Arial, sans-serif;
+    font-weight: 700;
+}
+h4{
+	text-align: center;
+	font-size: 1em;
+    line-height: 1em;
+    margin-bottom: 1em;
+    color: #f5c453;
+	text-transform: uppercase;
+	font-family: 'franklin-gothic-urw-cond', Arial, sans-serif;
+	font-weight: 700;
+	display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 
 
@@ -373,6 +419,7 @@ button, .button {
 	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 	z-index: 2000 !important;
+	animation-duration: 1.2s;
 }
 
 .links:hover {

@@ -31,9 +31,8 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-
+/*  Portfolio container */
 .row{
-  background: firebrick;
   max-width: 1000px !important;
   width: 100%;
   margin-top: 10px;
@@ -44,65 +43,6 @@ a {
 
 
 
-/* 
-.line {
-  margin: 8px -16px;
-  
-} */
-
-/* Add padding BETWEEN each column (if you want) */
-.line,
-.line > .column {
-  padding: 7px;
-}
-
-
-/* Clear floats after rows */ 
-.line:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-#services{
-  overflow: hidden;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  background: blue;
-  height: auto;
-}
-
-.service-item strong {
-  margin-bottom: 5px;
-  border: 10px solid green;
-  padding: 25px;
-  margin: 10px;
-  float: left;
-  clear: left;
-  overflow: hidden;
-  line-height: normal;
-  line-height: 30px;
-}
-
-
-.line :after {
-  content: "";
-  display: table;
-  clear: both;
-  margin-top: 10px;
-}
-
-.row,
-.row > figure {
-padding: 0px;
-clear: both;
-
-}
-
-
 a {
   color: currentColor;
   cursor: pointer;
@@ -110,14 +50,13 @@ a {
 
 }
 
-nav{
+/* nav{
   padding-top: 1rem;
   padding-bottom: 3rem;
   font-weight: 600;
   font-family: 'Montserrat';
   font-size: 75%;
-  padding: 0.9rem;
-}
+} */
 
 /* 2. Shared */
 
@@ -131,25 +70,31 @@ nav{
   width: 75%;
 }
 
+/* Full stack on Header */
 .job,
 .button {
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  color:#022e57;
+  font-size: 0.85rem;
 }
 
+/* botton on header */
 .button,
 .social a {
   transform-origin: center;
   transition-duration: 100ms;
+
 }
 
-/* 3. Specific */
+/* 3. Headers positon */
 
 .wallpaper {
   background-position: center;
   background-size: cover;
   opacity: 0.2;
   position: fixed;
+
 }
 
 .content {
@@ -157,9 +102,9 @@ nav{
     position: relative;
     min-height: 60vh;
     padding-top: 15px;
-    border: #d24d57
 }
-
+ 
+/* Box for header picture */
 .side {
   max-height: 20rem;
   max-width: 20rem;
@@ -171,38 +116,31 @@ nav{
   width: 100%;
 }
 
-.picture-shadow {
-  /* border-radius: 290486px; */
-  position: absolute;
-  top: 10%;
-}
 
 .picture-image {
   border-radius: 290486px;
   position: absolute;
 }
 
+/* About box in header */
 .about {
   max-width: 26rem;
 }
 
 .name {
- 
   line-height: 1.125;
   margin-bottom: 0.5rem;
   font-size: 49.1818px;
+
 }
 
-.job {
-  color:#022e57;
-  font-size: 0.85rem;
-}
 
 
 .description {
   font-size: 1.5rem;
 }
 
+/* Resume botton */
 .contact {
   display: inline-block;
   margin-bottom: 0;
@@ -338,13 +276,8 @@ nav{
 
 /* Portfolio Section (images)  */
 .row {
-	position: relative;
-	clear: both;
-	margin: 0 auto;
-	padding: 1em 0 4em;
-	max-width: 1000px;
-	list-style: none;
-	text-align: center;
+  padding-top: 3em;
+  padding-bottom: 1em;
 }
 
 
@@ -358,8 +291,7 @@ figure {
 	max-width: 480px;
 	max-height: 360px;
 	width: 48%;
-	height: auto;
-	text-align: center;
+
 }
 
 figure img {
@@ -367,44 +299,72 @@ figure img {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+  opacity: 0.8;
+  text-align: center;
 }
 
- figure h2 {
-	word-spacing: -0.15em;
-	font-weight: 300;
+ul .effect-jazz{
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-padding-start: 0px;
+  padding-left: 2em;
+  padding-right: 2em;
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #d32929;
+  position: relative;
+
 }
 
+li img{
+  padding-top: 3em;
+  background: #9bece0;
+  position: relative;
+  margin-bottom: 3em;
+}
 
-figure h2,
- figure p {
+ li strong {
+  font-size: 1.3em;
+  line-height: 1em;
+  margin-bottom: 0.25em;
+  color: #f5c453;
+  text-transform: uppercase;
+}
+
+/* 
+li h2,
+ li p {
 	margin: 0;
+} */
+
+.par {
+font-size: 15px !important;
+margin: 0%;
+font-family: 'Playfair Display', serif;
+
 }
 
-figure p {
-	letter-spacing: 1px;
-	font-size: 80%;
+a.links{
+  color: #04427c;
+  padding: 25px;
+  margin-bottom: 2px;
+  right: -20px !important;
 }
 
 /* portfolio effects */
 
-.effect-jazz {
-  background:  rgb(5, 5, 5);
-  border-width: 1px;
-  clear: left;
-
+li.effect-jazz {
+height: auto;
+border-width: 7px;
+width: auto;
 }
 
-figure.effect-jazz img {
-	opacity: 0.9;
+li.effect-jazz img {
+  position: relative;
+    margin-bottom: 1em;
 }
 
-/* figure.effect-jazz figcaption::after,
-figure.effect-jazz img,
-figure.effect-jazz p {
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-}  */
 
 
 /* Media queries */
@@ -469,16 +429,24 @@ figure {
   max-height: 360px;
 }
 
-.row figure.effect-jazz h2 {
+li{
+  padding: 25px;
+  float: none;
+  width: 100%;
+  min-width: 300px;
+  max-height: 360px;
+}
+
+.row li.effect-jazz h2 {
 	padding-top: 4%;
     font-size: 1rem;
-    background: blue !important;
 
 }
 
-.row figure.effect-jazz p {
+.row li.effect-jazz p {
   padding-top: 4%;
     font-size: 10px;
+    padding-right: 25px;
     background: purple !important;
 }
 
@@ -507,16 +475,15 @@ figure {
 }
 
 
-.row figure.effect-jazz p {
+.row li.effect-jazz p {
   padding-top: 4%;
 	-webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
-    font-size: 10px;
-    background: purple !important;
+    font-size: 5px;
 
   }
 
-.row figure.effect-jazz h2 {
+.row li.effect-jazz h2 {
 
     padding-top: 4%;
     -webkit-transition: -webkit-transform 0.35s;
@@ -527,15 +494,15 @@ figure {
 
   #about {
     padding: 100px 0 100px 0;
-    background: #016052 url(../images/Stairs.jpg) no-repeat !important;
+    background: #9bece0 url(../images/Stairs.jpg) no-repeat !important;
 }
   
 }
 
-#about, #portfolio, {
+/* #about, #portfolio, {
    padding: 100px 0 100px 0 !important;
 
-}
+} */
 
 #contact{
   background: #d24d57;
