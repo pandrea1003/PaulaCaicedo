@@ -306,6 +306,8 @@ li img{
   background: #9bece0;
   position: relative;
   margin-bottom: 3em;
+  max-width: 100%;
+  height: auto;
 }
 
  li strong {
