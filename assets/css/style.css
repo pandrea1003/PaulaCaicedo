@@ -296,14 +296,13 @@ ul .effect-jazz{
   max-width: 80em;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #d32929;
+  border-bottom: 1px solid #f15f66;
   position: relative;
 
 }
 
 li img{
   padding-top: 3em;
-  background: #9bece0;
   position: relative;
   margin-bottom: 3em;
   max-width: 100%;
@@ -314,7 +313,7 @@ li img{
   font-size: 1.3em;
   line-height: 1em;
   margin-bottom: 0.25em;
-  color: #40bef0;
+  color: #022e57;
   text-transform: uppercase;
   font-family: 'Cardo', serif;
 }
@@ -325,6 +324,9 @@ font-size: 15px !important;
 margin: 0%;
 font-family: 'Playfair Display', serif;
 
+}
+.portfolio-style{
+  color: #022e57;
 }
 
 a.links{
@@ -433,8 +435,9 @@ li{
 
 #about {
   padding: 100px 0 100px 0;
-  background: #d24d57 url(../images/Stairs.jpg) 50% 0 no-repeat fixed;
-  padding: 2.5em 0;}
+  background: #f06975 url(../images/Stairs.jpg) 50% 0 no-repeat fixed;
+  padding: 2.5em 0;
+}
 
 .picture-image {
   border-radius: 25px;
@@ -477,13 +480,11 @@ li{
     padding: 100px 0 100px 0;
     background: #9bece0 url(../images/Stairs.jpg) no-repeat !important;
 }
-  
+}
+#portfolio{
+  padding: 100px 0 100px 0;
 }
 
-/* #about, #portfolio, {
-   padding: 100px 0 100px 0 !important;
-
-} */
 
 #contact{
   background: #d24d57;
